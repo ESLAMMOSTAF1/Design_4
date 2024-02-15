@@ -1,0 +1,143 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(../image/pexels-eberhard-grossgasteiger-1287083.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 930px;
+}
+
+.parent {
+    position: relative;
+}
+
+.parent {
+    background-color: #eee;
+    width: 630px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.parent img {
+    background-image: url(../image/pexels-andrew-neel-3178786.jpg);
+    background-repeat: no-repeat;
+    width: 630px;
+    height: 400px;
+    background-size: cover;
+}
+
+.parent .two {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    top: 25px;
+}
+
+.parent .child {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 120px;
+    font-family: sans-serif;
+    z-index: 2;
+}
+
+.parent .child_one {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    left: 105px;
+    z-index: 1;
+}
+
+.parent .child_one a {
+    padding: 20px;
+    margin-right: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.parent P {
+    position: absolute;
+    left: -101PX;
+    top: 8px;
+    font-size: 40px;
+    color: white;
+}
+
+/* Mobile */
+
+@media (max-width: 767px) {
+    body {
+        max-width: 375px !important;
+        height: 930px !important;
+    }
+
+    .parent {
+        height: 213px;
+        width: 245px;
+    }
+
+    .parent img {
+        width: 302px;
+        height: 213px;
+        position: absolute;
+        left: -11%;
+    }
+
+    .parent .child {
+
+        font-size: 40px;
+        position: absolute;
+        left: 50%;
+        top: 50%
+    }
+
+    .parent .child_one {
+        left: 30px;
+    }
+
+    .parent .child_one a {
+        padding: 0;
+        margin: 6px;
+        font-size: 15px;
+    }
+
+    .parent .two {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        top: 20px;
+        left: 251px;
+    }
+
+    .parent p {
+        font-size: 20px;
+        position: absolute;
+        left: -53px;
+        top: 2px;
+    }
+}
+
+/* Medium Screens */
+
+@media (max-width: 992px) {}
+
+/* Large Screens */
+
+@media (min-width: 1200px) {}
